@@ -1,0 +1,12 @@
+<div fxLayout="column" fxFlex="100"> 
+    <div class="header"></div>
+
+    <div class="countries" fxLayout="row wrap" fxLayoutAlign="center">
+        <ng-container *ngFor="let location of locations">
+            <app-location [country]="location">
+            </app-location>
+        </ng-container>
+    </div>
+
+</div>
+
