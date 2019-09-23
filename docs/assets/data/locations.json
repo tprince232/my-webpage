@@ -1,0 +1,213 @@
+[{
+    "country": "United States",
+    "continent": "North America",
+    "abbreviation": "US",
+    "lived": [{
+        "location": "Chicago, IL",
+        "time": "1 year"
+    }, {
+        "location": "South Bend, IN",
+        "time": "7 semesters"
+    }, {
+        "location": "Wall, NJ",
+        "time": "18 years"
+    }],
+    "otherStates": ["CA", "CO", "CT", "FL", "GA", "HI", "KY", "MA", "MD", "MI", "MN",
+        "NY", "NC", "OH", "PA", "SC", "TN", "UT", "VT", "WA", "WI", "D.C."]
+},{
+    "country": "Canada",
+    "continent": "North America",
+    "abbreviation": "CA",
+    "lastVisit": "January 2016",
+    "locations": [{
+        "location": "Mont Tremblant",
+        "duration": "Many visits",
+        "reasons": ["Skiing"]
+    }, {
+        "location": "Vancouver & Whistler Blackcomb",
+        "duration": "1 week",
+        "reasons": ["Sightseeing", "Skiing"]
+    } ]
+}, {
+    "country": "Dominican Republic",
+    "continent": "North America",
+    "lastVisit": "March 2018",
+    "abbreviation": "DO",
+    "locations": [{
+        "location": "Punta Cana",
+        "duration": "1 week",
+        "reasons": ["Vacation"]
+    } ]
+}, {
+    "country": "United Kingtom",
+    "continent": "Europe",
+    "lastVisit": "December 2016",
+    "abbreviation": "UK",
+    "locations": [{
+        "location": "London",
+        "duration": "4 months",
+        "reasons": ["Study Abroad, Internship"]
+    }, {
+        "location": "Bath",
+        "duration": "1 day",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    }, {
+        "location": "Dover",
+        "duration": "1 day",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    }, {
+        "location": "Oxford",
+        "duration": "1 day",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "Ireland",
+    "continent": "Europe",
+    "lastVisit": "November 2016",
+    "abbreviation": "IE",
+    "locations": [{
+        "location": "Dublin",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "France",
+    "continent": "Europe",
+    "lastVisit": "October 2016",
+    "abbreviation": "FR",
+    "locations": [{
+        "location": "Paris",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    }, {
+        "location": "Nice",
+        "duration": "3 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    }, {
+        "location": "Marseille",
+        "duration": "1 day",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "Monaco",
+    "continent": "Europe",
+    "lastVisit": "October 2016",
+    "abbreviation": "MC",
+    "locations": [{
+        "location": "Monaco",
+        "duration": "1 day",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+},{
+    "country": "Spain",
+    "continent": "Europe",
+    "lastVisit": "October 2016",
+    "abbreviation": "ES",
+    "locations": [{
+        "location": "Barcelona",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "Germany",
+    "continent": "Europe",
+    "lastVisit": "September 2016",
+    "abbreviation": "DE",
+    "locations": [{
+        "location": "Munich",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Oktoberfest"]
+    } ]
+}, {
+    "country": "Denmark",
+    "continent": "Europe",
+    "lastVisit": "September 2016",
+    "abbreviation": "DK",
+    "locations": [{
+        "location": "Copenhagen",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "Netherlands",
+    "continent": "Europe",
+    "lastVisit": "November 2016",
+    "abbreviation": "NL",
+    "locations": [{
+        "location": "Amsterdam",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "Hungary",
+    "continent": "Europe",
+    "lastVisit": "November 2016",
+    "abbreviation": "HU",
+    "locations": [{
+        "location": "Budabest",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "Italy",
+    "continent": "Europe",
+    "lastVisit": "April 2014",
+    "abbreviation": "IT",
+    "locations": [{
+        "location": "Rome",
+        "duration": "3 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    }, {
+        "location": "Florence",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    }, {
+        "location": "Venice",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "Vatican City",
+    "continent": "Europe",
+    "lastVisit": "April 2014",
+    "abbreviation": "VC",
+    "locations": [{
+        "location": "Vatican City",
+        "duration": "1 day",
+        "reasons": ["Sightseeing", "Cultural Education", "Religious Experience"]
+    } ]
+}, {
+    "country": "Morocco",
+    "continent": "Africa",
+    "lastVisit": "October 2016",
+    "abbreviation": "MA",
+    "locations": [{
+        "location": "Marrakech",
+        "duration": "3 days",
+        "reasons": ["Sightseeing", "Cultural Education", "Hiking"]
+    } ]
+}, {
+    "country": "Australia",
+    "continent": "Oceania",
+    "lastVisit": "June 2014",
+    "abbreviation": "AU",
+    "locations": [ {
+        "location": "Brisbane",
+        "duration": "2 days",
+        "reasons": ["Sightseeing", "Cultural Education", "Hiking"]
+    }, {
+        "location": "Sydney",
+        "duration": "3 days",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+}, {
+    "country": "New Zealand",
+    "continent": "Oceania",
+    "lastVisit": "June 2014",
+    "abbreviation": "NZ",
+    "locations": [{
+        "location": "Aukland",
+        "duration": "1 day",
+        "reasons": ["Sightseeing", "Cultural Education"]
+    } ]
+} ]
