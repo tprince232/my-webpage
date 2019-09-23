@@ -1,21 +1,32 @@
 [{
     "country": "United States",
     "continent": "North America",
-    "abbreviation": "US"
+    "abbreviation": "US",
+    "lived": [{
+        "location": "Chicago, IL",
+        "time": "1 year"
+    }, {
+        "location": "South Bend, IN",
+        "time": "7 semesters"
+    }, {
+        "location": "Wall, NJ",
+        "time": "18 years"
+    }],
+    "otherStates": ["CA", "CO", "CT", "FL", "GA", "HI", "KY", "MA", "MD", "MI", "MN",
+        "NY", "NC", "OH", "PA", "SC", "TN", "UT", "VT", "WA", "WI", "D.C."]
 },{
     "country": "Canada",
     "continent": "North America",
     "abbreviation": "CA",
+    "lastVisit": "January 2016",
     "locations": [{
         "location": "Mont Tremblant",
         "duration": "Many visits",
-        "reasons": ["Skiing"],
-        "lastVisit": "January 2016"
+        "reasons": ["Skiing"]
     }, {
         "location": "Vancouver & Whistler Blackcomb",
         "duration": "1 week",
-        "reasons": ["Sightseeing", "Skiing"],
-        "lastVisit": "April 2010"
+        "reasons": ["Sightseeing", "Skiing"]
     } ]
 }, {
     "country": "Dominican Republic",

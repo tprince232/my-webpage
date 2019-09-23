@@ -1,11 +1,26 @@
 .mat-card {
-    max-width: 300px;
+    max-width: 280px;
     border: 1px solid gray;
     background-color: white;
     margin: 10px;
 }
-  
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+
+.mat-card-header {
+    height: 50px;
+}
+
+.mat-card-title {
+    font-size: 18px;
+}
+
+.mat-card-subtitle {
+    font-size: 15px;
+}
+
+button {
+    clear: both;
+}
+
+section {
+    overflow: hidden;
 }

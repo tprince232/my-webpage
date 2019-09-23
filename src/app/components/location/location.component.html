@@ -1,19 +1,36 @@
 <mat-card >
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{country.country}}</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    <mat-card-header >
+      <div mat-card-avatar #headerIcon></div>
+      <div fxLayout="column" fxLayoutAlign="center start">
+        <mat-card-title>{{country.country}}</mat-card-title>
+        <mat-card-subtitle *ngIf="!isUS()"><i>Last time there:</i> {{country.lastVisit}}</mat-card-subtitle>
+        <!-- <mat-card-subtitle *ngIf="!isUS()"></mat-card-subtitle> -->
+      </div>
     </mat-card-header>
     <img mat-card-image [src]="imageSource" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
+      <div *ngIf="!isUS()">
+        <div>{{overviewList}}</div>
+        <section [@inOutAnimation] *ngIf="showDetails">
+          <div *ngFor="let location of country.locations">
+            <br/>
+            <div>{{location.location}}, <i>{{location.duration}}</i></div>
+            <div>{{verbalizeList(location.reasons)}} </div>
+          </div>
+        </section>
+      </div>
+      <div *ngIf="isUS()">
+        <div *ngFor="let location of country.lived">
+          <div>{{location.location}}, <i>{{location.time}}</i></div>
+        </div>
+        <section [@inOutAnimation] *ngIf="showDetails">
+          <br/>
+          <div>Other states I have been to:<br/>{{verbalizeList(country.otherStates)}}</div>
+        </section>
+    </div>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+    <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
+      <button mat-button *ngIf="!showDetails" (click)="onDetailsButtonClick()">DETAILS</button>
+      <button mat-button *ngIf="showDetails" (click)="onDetailsButtonClick()">CLOSE</button>
     </mat-card-actions>
 </mat-card>
