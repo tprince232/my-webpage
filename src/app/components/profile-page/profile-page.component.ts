@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-profile-page',
@@ -9,6 +9,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ProfilePageComponent implements OnInit {
 
   locations;
+  @ViewChild('bannerPic', {static: false}) bannerPic;
 
   constructor(
     private http: HttpClient
@@ -16,6 +17,10 @@ export class ProfilePageComponent implements OnInit {
 
   ngOnInit() {
     this.getLocationInfo();
+  }
+
+  ngAfterViewInit() {
+    this.bannerPic.nativeElement.style.backgroundImage = 'url(assets/images/header.jpg)';
   }
 
   getLocationInfo() {
