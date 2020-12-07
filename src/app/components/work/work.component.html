@@ -1,0 +1,56 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+    <mat-icon>work_outline</mat-icon>
+    <h2>Employment</h2>
+  </div>
+
+  <h3>Avanade</h3>
+  <div *ngIf="workInfo" fxLayout="row" class="app-padding-lr" fxLayoutGap="15px">
+    <div fxFlex="33%" fxLayout="column">
+      <img src="assets/images/icons/Avanade.png" alt={workInfo.Avanade.avanadeLogoAltText}>
+      <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
+        <img fxFlex="40%" src="assets/images/icons/Accenture.jpg" [attr.alt]="workInfo.Avanade.accentureLogoAltText">
+        <img fxFlex="40%" src="assets/images/icons/Microsoft.jpg" [attr.alt]="workInfo.Avanade.microsoftLogoAltText">
+      </div>
+    </div>
+    <div fxFlex="33%">
+      <h4>Description</h4>
+      <p>{{workInfo.Avanade.description1}}</p>
+      <p>{{workInfo.Avanade.description2}}</p>
+      <p>{{workInfo.Avanade.description3}}</p>
+    </div>
+    <div fxFlex="33%" fxLayout="column">
+      <h4>Roles</h4>
+      <div><b>Software Engineering</b></div>
+      <ul class="app-margin-none app-padding-none">
+        <li *ngFor="let role of workInfo.Avanade.roles">
+          <div fxFlex="40%">{{role.title}}</div>
+          <i>{{role.start | date:'MMMM, y'}} - {{role.end !== "" ? (role.end | date:'MMMM, y'): 'present'}}</i>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Previous Work</h3>
+  <div fxLayout="row" class="older-jobs" *ngIf="workInfo">
+    <div fxFlex="33%" class="app-padding-lr">
+      <h4>Morningstar</h4>
+      <div><b>{{morningstar.title}}</b></div>
+      <div><i>{{morningstar.location}}</i></div>
+      <p>{{morningstar.description}}</p>
+    </div>
+    <div fxFlex="33%" class="app-padding-lr">
+      <h4>University of Notre Dame</h4>
+      <div><b>{{notreDame.title}}</b></div>
+      <div><i>{{notreDame.location}}</i></div>
+      <p>{{notreDame.description}}</p>
+    </div>
+    <div fxFlex="33%" class="app-padding-lr">
+      <h4>Spring Lake Beach Patrol</h4>
+      <div><b>{{springLake.title}}</b></div>
+      <div><i>{{springLake.location}}</i></div>
+      <p>{{springLake.description}}</p>
+    </div>
+  </div>
+
+</div>

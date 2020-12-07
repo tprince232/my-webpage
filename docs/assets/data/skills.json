@@ -1,0 +1,261 @@
+[{
+    "name": ".NET Architecture",
+    "level": 2,
+    "show": false,
+    "tag": "Other"
+}, {
+    "name": ".NET Programming Languages",
+    "level": 3,
+    "show": false,
+    "tag": "Programming Language"
+}, {
+    "name": "C#",
+    "level": 2,
+    "show": true,
+    "tag": "Programming Language"
+}, {
+    "name": "Visual Basic for Applications (VBA)",
+    "level": 1,
+    "show": true,
+    "tag": "Programming Language"
+}, {
+    "name": "Accessibility Methods & Techniques",
+    "level": 4,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "AngularJS",
+    "level": 1,
+    "show": true,
+    "tag": "front-end"
+}, {
+    "name": "Agile Team Practices",
+    "level": 2,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "Akumina",
+    "level": 1,
+    "show": true,
+    "tag": "BizApps"
+}, {
+    "name": "Android Application Development",
+    "level": 1,
+    "show": true,
+    "tag": "Mobile"
+}, {
+    "name": "Angular",
+    "level": 4,
+    "show": true,
+    "tag": ""
+}, {
+    "name": "Apex Programming Language",
+    "level": 2,
+    "show": true,
+    "tag": "salesforce"
+}, {
+    "name": "API Security",
+    "level": 1,
+    "show": false,
+    "tag": "Other"
+}, {
+    "name": "Application Architectures",
+    "level": 3,
+    "show": true,
+    "tag": "Other"
+}, {    
+    "name": "Architecture Design",
+    "level": 3,
+    "show": true,
+    "tag": "Other"
+}, {    
+    "name": "ASP.NET",
+    "level": 2,
+    "show": true,
+    "tag": "microsoft"
+}, {    
+    "name": "ASP.NET MVC",
+    "level": 2,
+    "show": true,
+    "tag": "microsoft"
+}, {
+    "name": "Asynchronous JavaScript and XML (AJAX)",
+    "level": 3,
+    "show": true,
+    "tag": "front-end"
+}, {
+    "name": "Build Management",
+    "level": 1,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "C++ Programming Language",
+    "level": 3,
+    "show": true,
+    "tag": "Programming Language"
+}, {
+    "name": "Cascading Style Sheets (CSS), SCSS",
+    "level": 4,
+    "show": true,
+    "tag": "Programming Language"
+}, {
+    "name": "Configuration & Release Management",
+    "level": 1,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "Design & Build Enablement",
+    "level": 1,
+    "show": false,
+    "tag": "Other"
+}, {
+    "name": "DevOps",
+    "level": 3,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "Event Driven Architectures (EDA)",
+    "level": 1,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "Git",
+    "level": 4,
+    "show": true,
+    "tag": "Source Control & DevOps"
+}, {
+    "name": "Google Chrome Extension",
+    "level": 1,
+    "show": true,
+    "tag": "front-end"
+}, {
+    "name": "Material Design",
+    "level": 3,
+    "show": true,
+    "tag": "front-end"
+}, {
+    "name": "gulp.js",
+    "level": 4,
+    "show": true,
+    "tag": "Source Control & DevOps"
+}, {
+    "name": "HTML (Hypertext Markup Language)",
+    "level": 4,
+    "show": true,
+    "tag": "Programming Lanugages"
+}, {
+    "name": "HTML5",
+    "level": 4,
+    "show": true,
+    "tag": "Programming Languages"
+}, {
+    "name": "Human Centered Design",
+    "level": 1,
+    "show": true,
+    "tag": "Design"
+}, {
+    "name": "JavaScript",
+    "level": 4,
+    "show": true,
+    "tag": "Programming Language"
+}, {
+    "name": "Jenkins",
+    "level": 1,
+    "show": true,
+    "tag": "Source Control & DevOps"
+}, {
+    "name": "Jasmine & Karma (for Unit Testing",
+    "level": 3,
+    "show": true,
+    "tag": "front-end"
+}, {
+    "name": "Linux Operating System",
+    "level": 3,
+    "show": false,
+    "tag": "Other"
+}, {
+    "name": "Microsoft Azure Administration",
+    "level": 3,
+    "show": true,
+    "tag": "microsoft"
+}, {
+    "name": "Microsoft Azure Cloud Services",
+    "level": 2,
+    "show": true,
+    "tag": "microsoft"
+}, {
+    "name": "Microsoft Azure Cost Management",
+    "level": 2,
+    "show": true,
+    "tag": "microsoft"
+}, {
+    "name": "Microsoft Azure DevOps",
+    "level": 4,
+    "show": true,
+    "tag": "Source Control & DevOps"
+}, {
+    "name": "Microsoft Azure DevOps Pipelines",
+    "level": 3,
+    "show": true,
+    "tag": "Source Control & DevOps"
+}, {
+    "name": "Microsoft Azure Functions",
+    "level": 2,
+    "show": true,
+    "tag": "microsoft"
+}, {
+    "name": "Microsoft SQL Server",
+    "level": 2,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "Ng-bootstrap",
+    "level": 3,
+    "show": false,
+    "tag": "front-end"
+}, {
+    "name": "react.js",
+    "level": 1,
+    "show": true,
+    "tag": "front-end"
+}, {
+    "name": "Salesforce Development",
+    "level": 2,
+    "show": true,
+    "tag": "salesforce"
+}, {
+    "name": "Salesforce Einstein AI",
+    "level": 1,
+    "show": true,
+    "tag": "salesforce"
+}, {
+    "name": "Salesforce Lightning Aura Components",
+    "level": 3,
+    "show": true,
+    "tag": "salesforce"
+}, {
+    "name": "Salesforce Lightning Web Components",
+    "level": 4,
+    "show": true,
+    "tag": "salesforce"
+}, {
+    "name": "SQL (Structured Query Language)",
+    "level": 3,
+    "show": true,
+    "tag": "Programming Languages"
+}, {
+    "name": "TypeScript Programming Language",
+    "level": 4,
+    "show": true,
+    "tag": "Programming Languages"
+}, {
+    "name": "Web API Services",
+    "level": 1,
+    "show": true,
+    "tag": "Other"
+}, {
+    "name": "Xamarin Cross-Platform Development",
+    "level": 1,
+    "show": true,
+    "tag": "Mobile"
+} ]

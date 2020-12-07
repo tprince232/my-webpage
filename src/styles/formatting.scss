@@ -1,0 +1,18 @@
+$padding: 12px;
+$halfPadding: 6px;
+
+.app-padding-none {
+    padding: 0px !important;
+}
+
+.app-margin-none {
+    margin: 0px !important;
+}
+
+.app-padding {
+    padding: padding;
+}
+
+.app-padding-lr {
+    padding: 0px $padding;
+}

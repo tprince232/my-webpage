@@ -1,10 +1,33 @@
 <div fxLayout="column" fxFlex="100"> 
-    <div class="header" #bannerPic>
-        <h1>Troy Prince</h1>
+    <div class="header" #bannerPic fxLayout="column" fxLayoutAlign="start center">
+        <div fxFlex="20%"></div>
+        <div fxLayout="column" fxLayoutAlign="start start">
+            <h1>Troy Prince</h1>
+            <div class="header-details">
+                <div>Software Engineer</div>
+                <!-- <div><i>e-Resume</i></div> -->
+            </div>
+        </div>
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="center center"> 
-        <h2>Traveller</h2>
+    <div class="section">
+        <app-skills></app-skills>
+    </div>
+
+    <div class="section">
+        <app-work></app-work>
+    </div>
+
+    <div class="section">
+        <app-education></app-education>
+    </div>
+
+
+    <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <mat-icon>flight_takeoff</mat-icon>
+            <h2>Travel</h2>
+        </div>
         <div class="countries" fxLayout="row wrap" fxLayoutAlign="center">
             <ng-container *ngFor="let location of locations">
                 <app-location [country]="location">

@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss",
+              "src/styles/variables.scss",
+              "src/styles/formatting.scss"
             ],
             "scripts": []
           },
@@ -93,7 +95,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
             "scripts": []
           }

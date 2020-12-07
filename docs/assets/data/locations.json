@@ -3,8 +3,11 @@
     "continent": "North America",
     "abbreviation": "US",
     "lived": [{
+        "location": "Hoboken, NJ",
+        "time": "5 months"
+    },{
         "location": "Chicago, IL",
-        "time": "1 year"
+        "time": "2 years"
     }, {
         "location": "South Bend, IN",
         "time": "7 semesters"

@@ -30,7 +30,10 @@
     </div>
     </mat-card-content>
     <mat-card-actions fxLayout="row" fxLayoutAlign="center center">
-      <button mat-button *ngIf="!showDetails" (click)="onDetailsButtonClick()">DETAILS</button>
-      <button mat-button *ngIf="showDetails" (click)="onDetailsButtonClick()">CLOSE</button>
+      <!-- <button mat-button *ngIf="!showDetails" (click)="onDetailsButtonClick()">DETAILS</button>
+      <button mat-button *ngIf="showDetails" (click)="onDetailsButtonClick()">CLOSE</button> -->
+      <button mat-icon-button (click)="onDetailsButtonClick()" [attr.aria-label]="showDetails ? 'close detials' : 'show details'">
+        <mat-icon role="button">{{showDetails ? 'expand_less' : 'expand_more'}}</mat-icon>
+      </button>
     </mat-card-actions>
 </mat-card>

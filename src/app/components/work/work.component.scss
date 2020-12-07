@@ -1,0 +1,13 @@
+@import 'src/styles/variables.scss';
+
+img {
+    width: 100%;
+}
+
+.older-jobs {
+    div:not(:first-child) {
+        // border-left: 1px solid $borderColor;
+    }
+
+    // border-top: 1px solid $borderColor;
+}

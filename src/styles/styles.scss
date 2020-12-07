@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+body {
+    margin: 0px;
+    font-family: $globalFont;
+}
+
+h1, h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3 {
+    font-family: $headerFont;
+}
+
+button {
+    border-style: revert;
+}
+
+.section {
+    border-bottom: 1px solid $headerText;
+    padding: 12px;
+}
+
+.x-large {
+    font-size: 32px;
+}

@@ -1,0 +1,47 @@
+{
+    "Avanade": {
+        "avanadeLogoAltText": "Avanade logo",
+        "accentureLogoAltText": "Accenture logo, below and to the left of the Avanade logo",
+        "microsoftLogoAltText": "Microsoft logo, below and to the right of the Avanade logo",
+        "roles": [{
+            "start": "05/23/2017",
+            "end": "07/30/2017",
+            "title": "Intern",
+            "location": "Chicago"
+        }, {
+            "start": "07/23/2018",
+            "end": "05/31/2019",
+            "title": "Analyst",
+            "location": "Chicago"
+        }, {
+            "start": "06/01/2019",
+            "end": "05/31/2020",
+            "title": "Senior Analyst",
+            "location": "Chicago"
+        }, {
+            "start": "06/01/2020",
+            "end": "",
+            "title": "Consultant",
+            "location": "New York City"
+        }],
+        "description1": "Avanade, founded as a joint partnership between Accenture and Microsoft, is the worlds leading digital innovator on the Microsoft stack.",
+        "description2": "As a consultant at Avanade, I am responsible for leading our clients to success in the digital age.  While Avanade specializes in Microsoft technologies, engagements can involve any technology.",
+        "description3": "During my tenure so far, I have developed strong Front-End development skills and proficency on the Salesforce platform.  I have worked with large, global teams and have worn many hats."
+    },
+    "Morningstar": {
+        "title": "Intern",
+        "location": "London, United Kingdom",
+        "description": "While studying abroad in London during the Fall Semester of my Junior Year, I had the opportunity to intern twice weekly in Mornginstar's London office.  It an incredible first hands-on experience in the industry."
+    },
+    "University of Notre Dame": {
+        "title": "Undergraduate Teaching Assistant",
+        "location": "Notre Dame, Indiana",
+        "description": "During the spring semesters of my Junior and Senior years, I spend several hours a week as a TA for Data Structures with C++."
+    },
+    "Spring Lake Beach Patrol": {
+        "title": "Lifeguard",
+        "location": "Spring Lake, New Jersey",
+        "description": "As a high school swimmer living at the Jersey Shore, I was naturally inclined to spend my teenage summers as an oceanfront lifeguard.",
+        "description2": "Through lifeguarding, I acquired many worldly skills and competencies at an early age such as critical decision making, clear communications, composure and confidence in front of a public audience, and collaborative leadership."
+    }
+}
