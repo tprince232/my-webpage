@@ -1,1 +1,12 @@
-<li>{{skill.name}}</li>
+<li fxLayoutAlign="space-between center" class="app-padding-t">
+  <div fxLayout="row" fxLayoutAlign="start center" ngClass.gt-xs="part1">
+    <img *ngIf="skill.src" [src]="resourcePath + skill.src" />
+    <span class="skill-name app-padding-l">{{skill.name}}</span>
+  </div>
+  <div fxFlex></div>
+  <div fxLayout="row" fxFlex="125px" class="app-padding-l">
+    <div *ngFor="let i of [].constructor(skill.level)">
+      <mat-icon>star_rate</mat-icon>
+    </div>
+  </div>
+</li>

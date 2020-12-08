@@ -27,3 +27,13 @@ h1 {
 .header h1 {
     margin-bottom: 20px;
 }
+
+.header-text-adjust {
+    padding-left: 50px;
+    max-width: 300px;
+    margin-top: -10px;
+
+    h1 {
+        font-size: 65px;
+    }
+}

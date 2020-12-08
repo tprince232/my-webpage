@@ -9,10 +9,22 @@ $halfPadding: 6px;
     margin: 0px !important;
 }
 
+.app-margin-light-b {
+    margin: 0px 0px $padding 0px;
+}
+
 .app-padding {
     padding: padding;
 }
 
+.app-padding-l {
+    padding: 0px 0px 0px $padding;
+}
+
 .app-padding-lr {
     padding: 0px $padding;
+}
+
+.app-padding-t {
+    padding: $padding 0px 0px 0px;
 }

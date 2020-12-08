@@ -19,14 +19,9 @@
     "show": true,
     "tag": "Programming Language"
 }, {
-    "name": "Accessibility Methods & Techniques",
-    "level": 4,
-    "show": true,
-    "tag": "Other"
-}, {
     "name": "AngularJS",
     "level": 1,
-    "show": true,
+    "show": false,
     "tag": "front-end"
 }, {
     "name": "Agile Team Practices",
@@ -47,12 +42,8 @@
     "name": "Angular",
     "level": 4,
     "show": true,
-    "tag": ""
-}, {
-    "name": "Apex Programming Language",
-    "level": 2,
-    "show": true,
-    "tag": "salesforce"
+    "tag": "front-end",
+    "src": "angular.jpg"
 }, {
     "name": "API Security",
     "level": 1,
@@ -69,19 +60,15 @@
     "show": true,
     "tag": "Other"
 }, {    
-    "name": "ASP.NET",
+    "name": "ASP.NET Web API",
     "level": 2,
     "show": true,
-    "tag": "microsoft"
-}, {    
-    "name": "ASP.NET MVC",
-    "level": 2,
-    "show": true,
-    "tag": "microsoft"
+    "tag": "microsoft",
+    "src": "aspdotnet.png"
 }, {
     "name": "Asynchronous JavaScript and XML (AJAX)",
     "level": 3,
-    "show": true,
+    "show": false,
     "tag": "front-end"
 }, {
     "name": "Build Management",
@@ -124,15 +111,17 @@
     "show": true,
     "tag": "Source Control & DevOps"
 }, {
-    "name": "Google Chrome Extension",
+    "name": "Google Chrome Extension Development",
     "level": 1,
     "show": true,
-    "tag": "front-end"
+    "tag": "front-end",
+    "src": "chrome-ext.jpg"
 }, {
     "name": "Material Design",
     "level": 3,
     "show": true,
-    "tag": "front-end"
+    "tag": "front-end",
+    "src": "material-design.png"
 }, {
     "name": "gulp.js",
     "level": 4,
@@ -167,44 +156,54 @@
     "name": "Jasmine & Karma (for Unit Testing",
     "level": 3,
     "show": true,
-    "tag": "front-end"
+    "tag": "front-end",
+    "src": "jasmine.svg"
 }, {
     "name": "Linux Operating System",
     "level": 3,
     "show": false,
     "tag": "Other"
 }, {
-    "name": "Microsoft Azure Administration",
+    "prefix": "Microsoft",
+    "name": "Azure Administration & Platform Development",
     "level": 3,
     "show": true,
-    "tag": "microsoft"
+    "tag": "microsoft",
+    "src": "azure.png"
 }, {
-    "name": "Microsoft Azure Cloud Services",
+    "prefix": "Microsoft",
+    "name": "Azure Cloud Services",
     "level": 2,
-    "show": true,
+    "show": false,
     "tag": "microsoft"
 }, {
-    "name": "Microsoft Azure Cost Management",
+    "prefix": "Microsoft",
+    "name": "Azure Cost Management",
     "level": 2,
-    "show": true,
+    "show": false,
     "tag": "microsoft"
 }, {
-    "name": "Microsoft Azure DevOps",
+    "prefix": "Microsoft",
+    "name": "Azure DevOps",
     "level": 4,
     "show": true,
-    "tag": "Source Control & DevOps"
+    "tag": "microsoft",
+    "src": "azure-devops.png"
 }, {
-    "name": "Microsoft Azure DevOps Pipelines",
+    "prefix": "Microsoft",
+    "name": "Azure DevOps Pipelines",
     "level": 3,
     "show": true,
     "tag": "Source Control & DevOps"
 }, {
-    "name": "Microsoft Azure Functions",
+    "prefix": "Microsoft",
+    "name": "Azure Functions",
     "level": 2,
-    "show": true,
+    "show": false,
     "tag": "microsoft"
 }, {
-    "name": "Microsoft SQL Server",
+    "prefix": "Microsoft",
+    "name": "SQL Server",
     "level": 2,
     "show": true,
     "tag": "Other"
@@ -217,27 +216,47 @@
     "name": "react.js",
     "level": 1,
     "show": true,
-    "tag": "front-end"
+    "tag": "front-end",
+    "src": "react.jpg"
 }, {
-    "name": "Salesforce Development",
-    "level": 2,
-    "show": true,
-    "tag": "salesforce"
-}, {
-    "name": "Salesforce Einstein AI",
+    "prefix": "Salesforce",
+    "name": "Einstein AI",
     "level": 1,
-    "show": true,
+    "show": false,
     "tag": "salesforce"
 }, {
-    "name": "Salesforce Lightning Aura Components",
+    "prefix": "Salesforce",
+    "name": "Lightning Aura Components",
     "level": 3,
     "show": true,
-    "tag": "salesforce"
+    "tag": "salesforce",
+    "src": "aura.png"
 }, {
-    "name": "Salesforce Lightning Web Components",
+    "prefix": "Salesforce",
+    "name": "Lightning Web Components",
     "level": 4,
     "show": true,
-    "tag": "salesforce"
+    "tag": "salesforce",
+    "src": "lwc.png"
+}, {
+    "prefix": "Salesforce",
+    "name": "Platform Development",
+    "level": 2,
+    "show": true,
+    "tag": "salesforce",
+    "src": "sf-platform.png"
+}, {
+    "name": "Apex Programming Language",
+    "level": 2,
+    "show": true,
+    "tag": "salesforce",
+    "src": "apex.png"
+}, {
+    "name": "DevOps best practices",
+    "level": 2,
+    "show": true,
+    "tag": "salesforce",
+    "src": "sf-devops.png"
 }, {
     "name": "SQL (Structured Query Language)",
     "level": 3,
@@ -258,4 +277,23 @@
     "level": 1,
     "show": true,
     "tag": "Mobile"
+}, {
+    "prefix": "Microsoft",
+    "name": "Universal Windows Platform",
+    "level": 1,
+    "show": true,
+    "tag": "microsoft",
+    "src": "windows.png"
+}, {
+    "name": "Web accessibility methods & techniques",
+    "level": 4,
+    "show": true,
+    "tag": "front-end",
+    "src": "accessibility.png"
+}, {
+    "name": "HTML, CSS, & JavaScript",
+    "level": 4,
+    "show": true,
+    "tag": "front-end",
+    "src": "html-css-js.png"
 } ]

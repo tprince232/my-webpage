@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SkillDetailComponent implements OnInit {
 
+  resourcePath: string = 'assets/images/icons/skills/'
   @Input() skill;
 
   constructor() { }

@@ -27,7 +27,7 @@ export class SkillsComponent implements OnInit {
       this.groups.forEach(group => {
         group.skills = skills.filter(skill => 
           skill.show === true && group.tags.includes(skill.tag)
-        )
+        ).sort((x, y) => y.level - x.level);
       })
     })
     

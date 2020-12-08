@@ -5,7 +5,7 @@
   </div>
 
   <h3>Avanade</h3>
-  <div *ngIf="workInfo" fxLayout="row" class="app-padding-lr" fxLayoutGap="15px">
+  <div *ngIf="workInfo" fxLayout="row" class="app-padding-lr" fxLayoutGap="15px" fxLayout.lt-sm="column">
     <div fxFlex="33%" fxLayout="column">
       <img src="assets/images/icons/Avanade.png" alt={workInfo.Avanade.avanadeLogoAltText}>
       <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
@@ -32,7 +32,7 @@
   </div>
 
   <h3>Previous Work</h3>
-  <div fxLayout="row" class="older-jobs" *ngIf="workInfo">
+  <div fxLayout="row" class="older-jobs" *ngIf="workInfo" fxLayout.lt-sm="column">
     <div fxFlex="33%" class="app-padding-lr">
       <h4>Morningstar</h4>
       <div><b>{{morningstar.title}}</b></div>
