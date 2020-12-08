@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { forkJoin } from 'rxjs'; 
 
 @Component({
   selector: 'app-skills',
@@ -8,26 +9,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  skillsData: any = {};
+  groups: Group[] = [];
 
   constructor(
     private http: HttpClient
   ) { }
 
   ngOnInit() {
-    Promise.all([
+    forkJoin([
       this.http.get('assets/data/skills.json'),
       this.http.get('assets/data/skills-categories.json')
-    ]).then((result: any) => {
+    ]).subscribe((result: any) => {
       const skills = result[0];
       const categories = result[1];
 
-      categories.forEach(category => {
-        const group = this.skillsData[category.position] = {};
-
+      this.groups = categories.filter(x => x.active === true);
+      this.groups.forEach(group => {
+        group.skills = skills.filter(skill => 
+          skill.show === true && group.tags.includes(skill.tag)
+        )
       })
     })
     
   }
+}
 
+class Group {
+  label: string;
+  tags: string[];
+  image: string;
+  position: number;
+  active: boolean;
+  skills: any[];
 }

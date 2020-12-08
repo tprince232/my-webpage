@@ -1,31 +1,27 @@
 [
     {
-        "Salesforce": {
-            "tags": ["salesforce"],
-            "image": "assets/images/icons/Salesforce.png",
-            "position": 2,
-            "active": true
-        }
+        "label": "Salesforce",
+        "tags": ["salesforce"],
+        "image": "assets/images/icons/Salesforce.png",
+        "position": 2,
+        "active": true
     }, {
-        "Microsoft": {
-            "tags": ["microsoft"],
-            "image": "assets/images/icons/Microsoft.jpg",
-            "position": 3,
-            "active": true
-        }
+        "label": "Microsoft",
+        "tags": ["microsoft"],
+        "image": "assets/images/icons/Microsoft.jpg",
+        "position": 3,
+        "active": true
     }, {
-        "Front-End Development": {
-            "tags": ["front-end"],
-            "image": null,
-            "position": 1,
-            "active": true
-        }
+        "label": "Front-End Development",
+        "tags": ["front-end"],
+        "image": null,
+        "position": 1,
+        "active": true
     }, {
-        "Salesforce": {
-            "tags": ["salesforce"],
-            "image": "assets/images/icons/Salesforce.png",
-            "position": 4,
-            "active": false
-        }
+        "label": "Salesforce",
+        "tags": ["salesforce"],
+        "image": "assets/images/icons/Salesforce.png",
+        "position": 4,
+        "active": false
     }
 ]

@@ -3,9 +3,15 @@
     <mat-icon>build</mat-icon>
     <h2>Skills</h2>
   </div>
-  <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayoutGap="8px">
-    <div fxFlex="30%" *ngFor="">
-
+  <div fxLayout="row wrap" fxLayoutAlign="space-between center" fxLayoutGap="12px">
+    <div fxFlex="30%" *ngFor="let group of groups" fxLayoutAlign="center center" fxLayout="column">
+      <h3 class="app-margin-none" fxLayoutAlign="center center">
+        <img *ngIf="group.image" [src]="group.image" [attr.alt]="group.label">
+        <span *ngIf="!group.image">{{group.label}}</span>
+      </h3>
+      <ul class="app-margin-none">
+        <app-skill-detail *ngFor="let skill of group.skills" [skill]="skill"></app-skill-detail>
+      </ul>
     </div>
   </div>
 </div>
