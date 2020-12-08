@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-prod-base": "ng build --prod --output-path docs --base-href /my-webpage/",
-    "build-prod": "ng build --prod --output-path docs"
+    "build-prod": "ng build --prod --output-path docs --base-href https://troyprince.me/"
   },
   "private": true,
   "dependencies": {
