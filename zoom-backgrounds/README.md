@@ -34,6 +34,23 @@ There's deliberately no texture or pattern. Fine repeating detail aliases once
 Zoom rescales and re-compresses the image, which shows up on camera as pixel
 noise; flat gradients survive that a lot better.
 
+## Why a bigger file doesn't make the logo sharper
+
+Nobody on the call ever sees this PNG. Zoom composites it into your camera feed
+and ships the result through the H.264 video encoder — often at 720p unless HD
+is switched on. That stream, not the source file, is the resolution ceiling, so
+a 4K or 8K export changes nothing about how crisp the logo looks.
+
+What does help is stroke weight. The lockup is sized at 34% of frame width so
+its strokes stay several pixels thick even after the downscale to 720p, which is
+what keeps thin geometric linework from turning to mush.
+
+Two things worth doing on your end:
+
+- **Settings → Video → Enable HD** raises the transmitted resolution.
+- Good, even lighting on your face. The encoder spends its bitrate where there's
+  motion, so a noisy dim webcam image starves the static background of bits.
+
 ## Logo assets
 
 `logo/` holds the mark and the full AI·ONE lockup in black, white and brand blue
