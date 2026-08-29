@@ -2,20 +2,30 @@
 
 Virtual backgrounds built from the AI One logo vectors.
 
-## Ready-to-use images
+## Upload these three
 
-Use the 4K files — Zoom downscales them cleanly, which looks sharper than
-feeding it an exactly-1080p image on a hi-dpi display.
+`out/zoom/` — 1920×1080, one per colourway. This is the set to upload.
 
-| File | Size | Look |
-| --- | --- | --- |
-| `out/ai-one-zoom-midnight.png` | 3840×2160 | Near-black with a blue glow — the default, safest on camera |
-| `out/ai-one-zoom-blue.png` | 3840×2160 | Deep brand blue gradient |
-| `out/ai-one-zoom-light.png` | 3840×2160 | Off-white, black logo — for bright rooms |
+| File | Look |
+| --- | --- |
+| `ai-one-zoom-midnight-1920x1080.png` | Near-black with a blue glow — the default, safest on camera |
+| `ai-one-zoom-blue-1920x1080.png` | Deep brand blue gradient |
+| `ai-one-zoom-light-1920x1080.png` | Off-white, black logo — for bright rooms |
 
-Each also has a `-1080.png` twin at 1920×1080 if something needs exactly HD.
+All three share an identical canvas and pixel-identical logo placement, so they
+swap cleanly without anything shifting.
 
-In Zoom: **Settings → Background & Effects → +** and pick a PNG.
+In Zoom: **Settings → Background & Effects → +** and add each PNG.
+
+**Turn on Settings → Video → HD.** Without it Zoom transmits around 360p and the
+logo will look soft no matter what you upload.
+
+### Why 1920×1080 and not larger
+
+With HD enabled Zoom transmits 1080p, so a 1920×1080 source maps 1:1 with no
+rescaling at all — the sharpest input the pipeline can take. `out/4k/` holds
+3840×2160 versions for anything outside Zoom (Teams, Meet, slides, wallpaper),
+but don't upload those here: bigger is not better, it just gets scaled back down.
 
 ## The logo looks mirrored
 
@@ -42,14 +52,11 @@ is switched on. That stream, not the source file, is the resolution ceiling, so
 a 4K or 8K export changes nothing about how crisp the logo looks.
 
 What does help is stroke weight. The lockup is sized at 34% of frame width so
-its strokes stay several pixels thick even after the downscale to 720p, which is
-what keeps thin geometric linework from turning to mush.
+its strokes stay several pixels thick even after the downscale, which is what
+keeps thin geometric linework from turning to mush.
 
-Two things worth doing on your end:
-
-- **Settings → Video → Enable HD** raises the transmitted resolution.
-- Good, even lighting on your face. The encoder spends its bitrate where there's
-  motion, so a noisy dim webcam image starves the static background of bits.
+So if the logo ever looks soft again, the thing to check is the transmitted
+resolution — HD enabled, CPU headroom, network — not the source file.
 
 ## Logo assets
 
