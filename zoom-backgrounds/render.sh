@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Renders background.html to 1920x1080 PNGs, one per colour variant.
+# Renders background.html to PNGs, one per colour variant.
+#
+# Each variant is rendered twice:
+#   ai-one-zoom-<variant>.png       3840x2160  (2x - use this one in Zoom)
+#   ai-one-zoom-<variant>-1080.png  1920x1080  (1x, if something needs exactly HD)
 #
 # Needs a Chromium/Chrome binary. Override with:
 #   CHROME=/path/to/chrome ./render.sh
@@ -23,14 +27,21 @@ if [ -z "$CHROME" ]; then
 fi
 [ -n "$CHROME" ] || { echo "No Chrome/Chromium found. Set CHROME=/path/to/chrome" >&2; exit 1; }
 
-for variant in midnight light blue; do
-  HEADLESS=""; case "$CHROME" in *headless_shell) ;; *) HEADLESS="--headless=new";; esac
+HEADLESS=""
+case "$CHROME" in *headless_shell) ;; *) HEADLESS="--headless=new";; esac
+
+shoot() { # variant, scale, output filename
   "$CHROME" $HEADLESS --no-sandbox --disable-gpu --hide-scrollbars \
-    --force-device-scale-factor=1 --window-size=1920,1080 \
+    --force-device-scale-factor="$2" --window-size=1920,1080 \
     --virtual-time-budget=4000 \
-    --screenshot="$OUT/ai-one-zoom-$variant.png" \
-    "file://$DIR/background.html?variant=$variant" >/dev/null 2>&1
-  echo "  out/ai-one-zoom-$variant.png"
+    --screenshot="$OUT/$3" \
+    "file://$DIR/background.html?variant=$1" >/dev/null 2>&1
+  echo "  out/$3"
+}
+
+for variant in midnight light blue; do
+  shoot "$variant" 2 "ai-one-zoom-$variant.png"
+  shoot "$variant" 1 "ai-one-zoom-$variant-1080.png"
 done
 
 echo "Done."

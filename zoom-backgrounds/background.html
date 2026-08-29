@@ -23,7 +23,6 @@
     --base: #05070d;
     --glow: rgba(87, 137, 255, .30);
     --glow-2: rgba(87, 137, 255, .13);
-    --grid: rgba(255, 255, 255, .045);
     --rule: rgba(87, 137, 255, .55);
     --ink: rgba(255, 255, 255, .60);
     --ghost: .055;
@@ -33,7 +32,6 @@
     --base: #f4f6fc;
     --glow: rgba(87, 137, 255, .26);
     --glow-2: rgba(87, 137, 255, .12);
-    --grid: rgba(11, 20, 48, .055);
     --rule: rgba(87, 137, 255, .8);
     --ink: rgba(11, 20, 48, .55);
     --ghost: .07;
@@ -43,7 +41,6 @@
     --base: #0c1744;
     --glow: rgba(87, 137, 255, .60);
     --glow-2: rgba(120, 92, 255, .25);
-    --grid: rgba(255, 255, 255, .05);
     --rule: rgba(255, 255, 255, .55);
     --ink: rgba(255, 255, 255, .62);
     --ghost: .09;
@@ -59,15 +56,6 @@
       radial-gradient(50% 60% at 96% 12%, var(--glow-2) 0%, transparent 65%);
   }
 
-  .grid {
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(var(--grid) 1.4px, transparent 1.4px);
-    background-size: 38px 38px;
-    /* fade the texture out of the middle so it never fights the speaker */
-    -webkit-mask-image: radial-gradient(70% 76% at 50% 50%, transparent 22%, #000 72%);
-            mask-image: radial-gradient(70% 76% at 50% 50%, transparent 22%, #000 72%);
-  }
 
   /* Oversized brand mark, bled off the right edge, clear of the centre where
      the speaker sits. */
@@ -116,26 +104,15 @@
     background: var(--rule);
   }
 
-  .url {
-    position: absolute;
-    right: 112px;
-    bottom: 84px;
-    font-size: 20px;
-    letter-spacing: .3em;
-    text-transform: lowercase;
-    color: var(--ink);
-  }
 </style>
 </head>
 <body>
   <div class="stage" id="stage" data-variant="midnight">
     <div class="glow"></div>
-    <div class="grid"></div>
     <div class="ghost"><img id="ghost-img" alt=""></div>
     <div class="vignette"></div>
 
     <div class="lockup"><img id="lockup-img" alt="AI One"></div>
-    <div class="url">ai.one</div>
   </div>
 
 <script>
