@@ -60,9 +60,13 @@ resolution — HD enabled, CPU headroom, network — not the source file.
 
 ## Logo assets
 
-`logo/` holds the mark and the full AI·ONE lockup in black, white and brand blue
-(`#5789FF`). The paths came straight from the Figma export, so they're the real
-vectors, not a redraw.
+`logo/` holds three forms — wordmark, circular mark, and the full lockup — each
+in black, white and brand blue (`#5789FF`). The paths came straight from the
+Figma export, so they're the real vectors, not a redraw.
+
+The backgrounds use the **wordmark** top-left, not the lockup: the circular mark
+already appears oversized on the right edge, so setting it beside the type as
+well just doubles it up.
 
 ## Re-rendering
 
@@ -79,4 +83,4 @@ Open `background.html` in a browser to preview. It takes query parameters:
 
 - `?variant=midnight|light|blue`
 - `?tagline=Some%20supporting%20line` — off by default
-- `?logo=mark` — mark only, no wordmark
+- `?logo=wordmark|lockup|mark` — wordmark is the default

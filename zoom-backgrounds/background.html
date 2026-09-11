@@ -116,7 +116,7 @@
   </div>
 
 <script>
-  // ?variant=midnight|light|blue   ?tagline=...   ?logo=lockup|mark
+  // ?variant=midnight|light|blue   ?tagline=...   ?logo=wordmark|lockup|mark
   var q = new URLSearchParams(location.search);
   var variant = q.get('variant') || 'midnight';
   var stage = document.getElementById('stage');
@@ -127,7 +127,11 @@
 
   // Black logo art on the light background, white art on the dark ones.
   var ink = (variant === 'light') ? 'black' : 'white';
-  document.getElementById('lockup-img').src = 'logo/ai-one-' + (q.get('logo') === 'mark' ? 'mark' : 'lockup') + '-' + ink + '.svg';
+  // Wordmark by default: the circular mark already appears oversized on the
+  // right, so repeating it beside the type just doubles it up.
+  var logo = q.get('logo');
+  if (['wordmark','lockup','mark'].indexOf(logo) < 0) logo = 'wordmark';
+  document.getElementById('lockup-img').src = 'logo/ai-one-' + logo + '-' + ink + '.svg';
   document.getElementById('ghost-img').src = 'logo/ai-one-mark-' + (variant === 'light' ? 'blue' : (variant === 'blue' ? 'white' : 'blue')) + '.svg';
 
   // Optional supporting line under the lockup, e.g. ?tagline=Artificial%20Intelligence
